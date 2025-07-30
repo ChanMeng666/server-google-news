@@ -60,20 +60,20 @@ Comprehensive error handling for API failures and invalid inputs, with helpful e
 ### 🌍 Language Support
 Automatic fallback to English for unsupported language codes with appropriate user notifications.
 
-# 🔑 SERP API Setup Guide
+# 🔑 SerpApi Setup Guide
 
-Before getting started, you'll need to obtain a SERP API key. Here's how:
+Before getting started, you'll need to obtain a SerpApi key. Here's how:
 
-1. Visit [SERP API website](https://serpapi.com/) and create an account
+1. Visit [SerpApi website](https://serpapi.com/) and create an account
 
 2. After registration, go to your Dashboard:
    - Locate the "API Key" section
    - Copy your API key
-   - New users get 100 free API calls
+   - New users get 250 free API calls
 
 3. API Usage Details:
-   - Free tier: 100 searches per month
-   - Paid plans start at $50/month for 5000 searches
+   - Free tier: 250 searches per month
+   - Paid plans start at $75/month for 5000 searches
    - Billing based on successful API calls
    - Multiple payment methods: Credit Card, PayPal, etc.
 
