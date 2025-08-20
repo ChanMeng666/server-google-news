@@ -149,6 +149,7 @@ npx -y @smithery/cli install @chanmeng666/google-news-server --client claude
 ```
 
 [![Trust Score](https://archestra.ai/mcp-catalog/api/badge/quality/ChanMeng666/server-google-news)](https://archestra.ai/mcp-catalog/chanmeng666__server-google-news)
+
 [![smithery badge](https://smithery.ai/badge/@chanmeng666/google-news-server)](https://smithery.ai/server/@chanmeng666/google-news-server)
 
 ## Installing via mcp-get
