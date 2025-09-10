@@ -1,0 +1,57 @@
+{
+  "id": "google-news-server",
+  "name": "Google News Server",
+  "version": "1.0.0",
+  "description": "MCP server for Google News search via SerpAPI integration. Automatically categorizes news results and supports multiple languages and regions.",
+  "author": "Chan Meng",
+  "license": "MIT",
+  "homepage": "https://github.com/ChanMeng666/server-google-news",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChanMeng666/server-google-news.git"
+  },
+  "categories": ["news", "search", "information"],
+  "keywords": ["news", "google", "search", "mcp", "serpapi"],
+  "server": {
+    "entry_point": "dist/index.js",
+    "command": "node",
+    "args": ["dist/index.js"],
+    "environment_variables": {
+      "SERP_API_KEY": {
+        "description": "SerpAPI key for Google News access",
+        "required": true,
+        "type": "string"
+      }
+    }
+  },
+  "mcp": {
+    "protocol_version": "1.0.0",
+    "capabilities": {
+      "tools": {
+        "google_news_search": {
+          "description": "Search Google News for articles and news content with automatic categorization",
+          "parameters": {
+            "q": "Search query string",
+            "gl": "Country code (e.g., 'us', 'uk')",
+            "hl": "Language code (e.g., 'en', 'es')",
+            "topic_token": "Token for specific news topics",
+            "publication_token": "Token for specific publishers",
+            "story_token": "Token for full coverage of a story",
+            "section_token": "Token for specific sections"
+          }
+        }
+      }
+    }
+  },
+  "requirements": {
+    "node": ">=18.0.0"
+  },
+  "icon": "public/server-google-news.svg",
+  "files": [
+    "dist/",
+    "public/",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ]
+}
