@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+Allow: /src/
+Allow: /dist/
+Allow: /public/
+Allow: /llms.txt
+Allow: /AI_INSTRUCTIONS.md
+Allow: /structured-data.json
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.github/workflows/
+
+# AI Crawler Guidelines
+Crawl-delay: 1
+
+# AI Agent Instructions
+# This repository contains a Model Context Protocol (MCP) server for Google News search
+# AI agents should refer to llms.txt for usage instructions
+# Structured data is available in structured-data.json
+# Detailed AI instructions are in AI_INSTRUCTIONS.md

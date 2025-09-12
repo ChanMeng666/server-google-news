@@ -1,0 +1,40 @@
+# Google News MCP Server - AI Usage Guide
+
+## Service Overview
+This is a Model Context Protocol (MCP) server specifically designed to provide Google News search capabilities for AI agents.
+
+## Core Features
+- **Smart News Search**: Supports keyword, topic, publication, and story-based search methods
+- **Automatic Categorization**: Automatically categorizes news results into AI & Technology, Business, Science & Research, Healthcare, and other relevant categories
+- **Multi-language Support**: Supports multiple languages and regional settings
+- **Structured Output**: Provides formatted news data that's easy for AI to understand and process
+
+## Usage Instructions
+1. Call the `google_news_search` tool via MCP protocol
+2. Supported parameters: q (query), gl (country), hl (language), topic_token (topic), publication_token (publication), etc.
+3. Returns categorized news articles, each containing title, source, link, date, snippet, and other metadata
+
+## Best Practices
+- Use specific search keywords for more accurate results
+- Leverage topic_token for deep searches on specific topics
+- Combine gl and hl parameters for localized searches
+- Utilize returned categorization information for topic-related follow-up analysis
+
+## Technical Architecture
+- Built with TypeScript and Node.js
+- Uses SerpAPI as data source
+- Implements MCP protocol standards
+- Supports Docker containerization
+
+## Integration Examples
+- News monitoring and analysis workflows
+- Research assistance and fact-checking
+- Content curation and aggregation
+- Market intelligence gathering
+- Real-time news alerts and notifications
+
+## Error Handling
+- Automatic fallback to English for unsupported languages
+- Comprehensive error messages for API failures
+- Rate limiting compliance (2 requests/second)
+- Graceful handling of invalid parameters

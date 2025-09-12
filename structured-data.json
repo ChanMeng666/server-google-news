@@ -1,0 +1,69 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Google News MCP Server",
+  "description": "Model Context Protocol server for Google News search with automatic categorization",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Node.js",
+  "programmingLanguage": "TypeScript",
+  "author": {
+    "@type": "Person",
+    "name": "Chan Meng",
+    "url": "https://chanmeng.org/"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "featureList": [
+    "Google News search integration",
+    "Automatic news categorization", 
+    "Multi-language support",
+    "MCP protocol compliance",
+    "Docker containerization",
+    "AI agent optimization",
+    "Structured data output",
+    "Error handling and fallbacks"
+  ],
+  "softwareVersion": "1.0.0",
+  "datePublished": "2024-12-30",
+  "license": "MIT",
+  "url": "https://github.com/ChanMeng666/server-google-news",
+  "codeRepository": "https://github.com/ChanMeng666/server-google-news.git",
+  "keywords": [
+    "mcp",
+    "google-news",
+    "search",
+    "ai",
+    "news",
+    "categorization",
+    "serpapi"
+  ],
+  "programmingModel": "Model Context Protocol",
+  "runtimePlatform": "Node.js",
+  "softwareRequirements": {
+    "@type": "SoftwareApplication",
+    "name": "Node.js",
+    "version": ">=18.0.0"
+  },
+  "dependencies": [
+    "@modelcontextprotocol/sdk",
+    "axios",
+    "dotenv",
+    "mcp-evals"
+  ],
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "https://www.npmjs.com/package/@chanmeng666/google-news-server",
+    "encodingFormat": "application/zip"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "mcp://google-news-search?q={search_term}"
+    },
+    "query-input": "required name=search_term"
+  }
+}

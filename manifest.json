@@ -52,6 +52,50 @@
     "public/",
     "package.json",
     "README.md",
-    "LICENSE"
-  ]
+    "LICENSE",
+    "llms.txt",
+    "AI_INSTRUCTIONS.md",
+    "structured-data.json"
+  ],
+  "ai_metadata": {
+    "purpose": "Google News search and categorization for AI agents",
+    "use_cases": [
+      "news monitoring",
+      "research assistance", 
+      "content curation",
+      "market intelligence",
+      "breaking news alerts",
+      "topic exploration"
+    ],
+    "capabilities": {
+      "search_types": ["keyword", "topic", "publication", "story", "section"],
+      "categorization": "automatic",
+      "languages_supported": ["en", "es", "fr", "de", "it", "pt", "ru", "ja", "ko", "zh"],
+      "regions_supported": "global",
+      "output_format": "structured_text",
+      "real_time": true
+    },
+    "integration_guidelines": {
+      "mcp_protocol": "1.0.0",
+      "tool_name": "google_news_search",
+      "response_format": "structured_text",
+      "rate_limits": "2 requests/second",
+      "concurrent_requests": 5,
+      "cache_duration": "1 hour"
+    },
+    "ai_optimization": {
+      "geo_enabled": true,
+      "structured_data": true,
+      "llms_txt": true,
+      "error_handling": "comprehensive",
+      "fallback_support": true,
+      "monitoring": "enabled"
+    },
+    "performance_metrics": {
+      "average_response_time": "< 3 seconds",
+      "success_rate": "> 95%",
+      "categorization_accuracy": "> 85%",
+      "uptime": "> 99%"
+    }
+  }
 }

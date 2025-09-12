@@ -212,7 +212,146 @@ This project is [MIT licensed](./LICENSE).
 
 # 🙋‍♀ Author
 
-Created and maintained by [Chan Meng](https://chanmeng.live/).
+Created and maintained by [Chan Meng](https://chanmeng.org/).
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=normal&logo=github&logoColor=white)](https://github.com/ChanMeng666)
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=normal&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chanmeng666/)
+
+---
+
+<details>
+<summary>🤖 AI Agent Instructions & GEO Optimization</summary>
+
+## For AI Agents and LLM Crawlers
+
+This MCP server is optimized for AI agent usage with comprehensive instructions and structured data.
+
+### Quick AI Usage Guide
+
+```json
+{
+  "tool": "google_news_search",
+  "parameters": {
+    "q": "artificial intelligence latest developments",
+    "gl": "us",
+    "hl": "en"
+  }
+}
+```
+
+### AI-Friendly Features
+- **Automatic Categorization**: News results are automatically sorted into relevant categories
+- **Structured Output**: Returns formatted data optimized for AI processing
+- **Multi-language Support**: Supports various languages with automatic fallbacks
+- **Error Handling**: Comprehensive error messages and graceful degradation
+
+### Response Format
+The server returns categorized news with the following structure:
+- **Categories**: AI & Technology, Business, Science & Research, Healthcare, General
+- **Article Fields**: title, source, link, date, snippet, authors
+- **Metadata**: timestamp, menu_links for related topics
+
+### Best Practices for AI Agents
+1. Use specific, descriptive keywords for better results
+2. Leverage automatic categorization for topic-based workflows
+3. Implement proper error handling and retry logic
+4. Respect API rate limits (2 requests/second)
+5. Parse structured responses for better context understanding
+
+### Advanced Usage Patterns
+- **News Monitoring**: Use company names or stock symbols for business news
+- **Research Exploration**: Leverage topic tokens for field-specific searches
+- **Breaking News**: Use "breaking news" or "latest news" queries
+- **Multi-language**: Combine appropriate gl and hl parameters
+
+### Error Handling
+- Invalid API key: Check SERP_API_KEY environment variable
+- Unsupported language: Server auto-falls back to English
+- Rate limiting: Respect 2 requests/second limit
+- Invalid parameters: Validate parameter types before calling
+
+For detailed AI agent instructions, see [AI_INSTRUCTIONS.md](./AI_INSTRUCTIONS.md).
+
+</details>
+
+<details>
+<summary>📊 GEO Metrics & Monitoring</summary>
+
+## Generative Engine Optimization (GEO) Features
+
+This server includes comprehensive monitoring and optimization for AI agent usage.
+
+### Key Metrics Tracked
+- **Citation Success Rate**: Percentage of successful tool calls
+- **AI Traffic Conversion Rate**: Percentage of AI agents successfully using the tool
+- **Query Coverage Rate**: Percentage of queries returning relevant results
+- **Response Time**: Average response time for tool calls
+- **Categorization Accuracy**: Accuracy of automatic news categorization
+- **Link Carry Rate**: Percentage of responses including source links
+
+### Monitoring Configuration
+```typescript
+interface GEOMonitoringConfig {
+  trackingEnabled: boolean;
+  metricsEndpoint: string;
+  reportingInterval: number; // minutes
+  alertThresholds: {
+    errorRate: number;
+    responseTime: number;
+    successRate: number;
+    satisfactionScore: number;
+  };
+}
+```
+
+### Performance Optimization
+- Real-time metrics collection
+- Automated alerting for performance issues
+- Query pattern analysis for optimization
+- Agent usage tracking and analytics
+
+### Data-Driven Improvements
+- Continuous monitoring of AI agent satisfaction
+- Query success rate analysis
+- Response time optimization
+- Categorization accuracy improvements
+
+For technical implementation details, see [src/geo-metrics.ts](./src/geo-metrics.ts).
+
+</details>
+
+<details>
+<summary>🔍 Structured Data & Metadata</summary>
+
+## AI-Optimized Metadata
+
+This server provides comprehensive structured data for AI agents and search engines.
+
+### JSON-LD Structured Data
+The server includes structured data following Schema.org standards:
+- Software application metadata
+- Feature descriptions and capabilities
+- Technical requirements and dependencies
+- Usage patterns and integration guidelines
+
+### MCP Protocol Compliance
+- **Protocol Version**: 1.0.0
+- **Tool Name**: `google_news_search`
+- **Response Format**: Structured text with categorized results
+- **Rate Limits**: 2 requests/second, 5 concurrent requests
+
+### AI Discovery Features
+- **llms.txt**: Comprehensive AI usage guide at root level
+- **Structured Metadata**: Enhanced manifest.json with AI-specific information
+- **Error Handling**: AI-friendly error messages and fallbacks
+- **Documentation**: Detailed usage examples and best practices
+
+### Integration Guidelines
+- Designed for seamless integration with other MCP servers
+- Optimized for AI agent workflows
+- Supports various AI platforms and frameworks
+- Provides clear error handling and debugging information
+
+For complete structured data, see [structured-data.json](./structured-data.json).
+
+</details>
 
