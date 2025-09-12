@@ -269,7 +269,6 @@ The server returns categorized news with the following structure:
 - Rate limiting: Respect 2 requests/second limit
 - Invalid parameters: Validate parameter types before calling
 
-For detailed AI agent instructions, see [AI_INSTRUCTIONS.md](./AI_INSTRUCTIONS.md).
 
 </details>
 

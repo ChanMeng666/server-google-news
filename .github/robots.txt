@@ -4,7 +4,6 @@ Allow: /src/
 Allow: /dist/
 Allow: /public/
 Allow: /llms.txt
-Allow: /AI_INSTRUCTIONS.md
 Allow: /structured-data.json
 Disallow: /node_modules/
 Disallow: /.git/
