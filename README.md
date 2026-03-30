@@ -354,3 +354,8 @@ For complete structured data, see [structured-data.json](./structured-data.json)
 
 </details>
 
+
+## Hosted deployment
+
+A hosted deployment is available on [Fronteir AI](https://fronteir.ai/mcp/chanmeng-google-news-mcp-server).
+
