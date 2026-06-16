@@ -14,7 +14,7 @@ If you discover a security vulnerability in this project, please report it respo
 
 **Do not open a public GitHub issue for security vulnerabilities.**
 
-Instead, please email **ChanMeng666@outlook.com** with:
+Instead, please email **chanmeng.dev@gmail.com** with:
 
 - A description of the vulnerability
 - Steps to reproduce or a proof of concept
