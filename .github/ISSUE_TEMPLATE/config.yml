@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions & Discussions
+    url: https://github.com/ChanMeng666/server-google-news/discussions
+    about: Have a question or an idea? Start a discussion here instead of opening an issue.
