@@ -26,7 +26,7 @@
     "Structured data output",
     "Error handling and fallbacks"
   ],
-  "softwareVersion": "1.0.0",
+  "softwareVersion": "1.0.1",
   "datePublished": "2024-12-30",
   "license": "MIT",
   "url": "https://github.com/ChanMeng666/server-google-news",

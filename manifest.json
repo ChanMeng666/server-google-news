@@ -1,7 +1,7 @@
 {
   "id": "google-news-server",
   "name": "Google News Server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for Google News search via SerpAPI integration. Automatically categorizes news results and supports multiple languages and regions.",
   "author": "Chan Meng",
   "license": "MIT",
