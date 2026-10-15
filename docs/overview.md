@@ -15,10 +15,6 @@ A Model Context Protocol (MCP) server implementation that provides Google News s
 
 <br/>
 
-[Try it now](https://smithery.ai/server/@chanmeng666/google-news-server)
-
-<br/>
-
 https://github.com/user-attachments/assets/1cc71c27-f840-4c94-9ab5-460d84ba4779
 
 
@@ -129,15 +125,6 @@ The evals package loads an mcp client that then runs the index.ts file, so there
 OPENAI_API_KEY=your-key  npx mcp-eval src/evals/evals.ts src/index.ts
 ```
 # 📦 Installation
-
-## Installing via Smithery
-
-To install Google News for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@chanmeng666/google-news-server):
-
-```bash
-npx -y @smithery/cli install @chanmeng666/google-news-server --client claude
-```
-
 
 ## Installing via mcp-get
 
