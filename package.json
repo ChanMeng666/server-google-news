@@ -2,6 +2,15 @@
   "name": "@chanmeng666/google-news-server",
   "version": "1.0.1",
   "description": "MCP server for Google News search via SerpAPI",
+  "author": "Chan Meng (https://chanmeng.org)",
+  "homepage": "https://github.com/ChanMeng666/server-google-news#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChanMeng666/server-google-news.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ChanMeng666/server-google-news/issues"
+  },
   "type": "module",
   "bin": {
     "google-news-server": "dist/index.js"
