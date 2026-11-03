@@ -32,7 +32,7 @@ class GoogleNewsServer {
     }
 
     this.server = new Server(
-      { name: 'google-news-server', version: '1.0.1' },
+      { name: 'google-news-server', version: '1.0.2' },
       { capabilities: { tools: {} } }
     );
 
